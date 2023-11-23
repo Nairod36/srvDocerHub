@@ -29,7 +29,6 @@ const updateInterval = 25000;
 setInterval(() => {
   const repo = 'nairod36/zootest:main';
 
-  // Replace with the command to pull the updated image
   exec(`docker pull ${repo}`, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error: ${error.message}`);
